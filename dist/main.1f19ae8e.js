@@ -130,7 +130,7 @@ exports.default = _default;
 },{}],"main.js":[function(require,module,exports) {
 "use strict";
 
-var _css = _interopRequireDefault(require("./css.js"));
+var _css = _interopRequireDefault(require("/css.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -189,7 +189,7 @@ document.querySelector("#btnFast").onclick = function () {
   time = 0;
   st = play();
 };
-},{"./css.js":"css.js"}],"C:/Users/binghao/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"/css.js":"css.js"}],"C:/Users/binghao/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
