@@ -117,39 +117,24 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"css.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
+})({"main.js":[function(require,module,exports) {
 var string = "\n.\u5361\u6BD4\u517D * {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n  }\n  .\u5361\u6BD4\u517D {\n    position: relative;\n    height: 100vh;\n    background: radial-gradient(\n        circle at 50% 0,\n        rgba(255, 0, 0, 0.5),\n        rgba(255, 0, 0, 0) 70.71%\n      ),\n      radial-gradient(\n        circle at 6.7% 75%,\n        rgba(0, 0, 255, 0.5),\n        rgba(0, 0, 255, 0) 70.71%\n      ),\n      radial-gradient(\n          circle at 93.3% 75%,\n          rgba(0, 255, 0, 0.5),\n          rgba(0, 255, 0, 0) 70.71%\n        )\n        beige;\n  }\n  \n  .ear.left {\n    position: absolute;\n    width: 0;\n    height: 0;\n    border-right: 30px solid transparent;\n    border-left: 30px solid transparent;\n    border-bottom: 20px solid #f2e2b5;\n    border-top: none;\n    left: 50%;\n    margin-left: -65px;\n    top: 63px;\n    transform: rotate(-15deg);\n    z-index: 2;\n  }\n  .ear.left::before {\n    content: \"\";\n    display: block;\n    width: 0;\n    height: 0;\n    border-right: 30px solid transparent;\n    border-left: 30px solid transparent;\n    border-bottom: 20px solid #2e524e;\n    border-top: none;\n    left: 50%;\n    margin-left: -31px;\n    margin-top: -26px;\n  }\n  .ear.right {\n    border: 1px solid red;\n    position: absolute;\n    width: 0;\n    height: 0;\n    border-right: 30px solid transparent;\n    border-left: 30px solid transparent;\n    border-bottom: 20px solid #f2e2b5;\n    border-top: none;\n    left: 50%;\n    margin-left: 5px;\n    top: 63px;\n    transform: rotate(15deg);\n    z-index: 2;\n  }\n  .ear.right::before {\n    content: \"\";\n    display: block;\n    width: 0;\n    height: 0;\n    border-right: 30px solid transparent;\n    border-left: 30px solid transparent;\n    border-bottom: 20px solid #2e524e;\n    border-top: none;\n    left: 50%;\n    margin-left: -31px;\n    margin-top: -26px;\n  }\n  .head {\n    height: 90px;\n    width: 150px;\n    position: absolute;\n    top: 75px;\n    left: 50%;\n    margin-left: -75px;\n    border-radius: 45%;\n    background: #f2e2b5;\n    z-index: 2;\n  }\n  .headOutline {\n    content: \"\";\n    display: block;\n    position: absolute;\n    left: 50%;\n    margin-left: -100px;\n    top: 45px;\n    border-radius: 50%;\n    width: 200px;\n    height: 150px;\n    background: #2e524e;\n    z-index: 1;\n  }\n  .eye {\n    position: relative;\n  }\n  .eye.left {\n    border: 2px solid #2e524e;\n    width: 32px;\n    position: absolute;\n    left: 50%;\n    margin-left: -50px;\n    top: 30px;\n    transform: rotate(-6deg);\n  }\n  .eye.right {\n    position: absolute;\n    border: 2px solid #2e524e;\n    width: 32px;\n    left: 50%;\n    margin-left: 18px;\n    transform: rotate(6deg);\n    top: 30px;\n    z-index: 2;\n  }\n  .mouth {\n    border-bottom: 3px solid #2e524e;\n    border-radius: 20%;\n    width: 90px;\n    height: 20px;\n    position: absolute;\n    left: 50%;\n    margin-left: -45px;\n    top: 45px;\n  }\n  .body {\n    position: absolute;\n    border: 2px solid black;\n    border-radius: 500px / 400px;\n    width: 300px;\n    height: 210px;\n    left: 50%;\n    margin-left: -150px;\n    top: 155px;\n    background: #2e524e;\n    z-index: 3;\n    animation: bigBody 2000ms infinite alternate;\n  }\n  .body::before {\n    content: \"\";\n    display: block;\n    width: 210px;\n    height: 160px;\n    position: absolute;\n    left: 50%;\n    margin-left: -105px;\n    top: 15px;\n    border-radius: 50%;\n    background: #f2e2b5;\n  }\n  .bodyYuan {\n    width: 140px;\n    height: 50px;\n    border-radius: 50%;\n    z-index: 33;\n    background: #2e524e;\n    position: absolute;\n    left: 50%;\n    margin-left: -70px;\n    top: 305px;\n    z-index: 3;\n  }\n  .foot > .footLeft {\n    border: 2px solid black;\n    border-radius: 50%;\n    width: 120px;\n    height: 100px;\n    position: absolute;\n    left: 50%;\n    margin-left: -145px;\n    top: 315px;\n    z-index: 3;\n    background: #f2e2b5;\n    transform: rotate(25deg);\n  }\n  .foot > .footLeft::before {\n    content: \"\";\n    display: block;\n    border-radius: 50%;\n    width: 60px;\n    height: 50px;\n    background: #9e5526;\n    position: absolute;\n    margin-left: 45px;\n    margin-top: 30px;\n  }\n  .foot > .footRight {\n    border: 2px solid black;\n    border-radius: 50%;\n    width: 120px;\n    height: 100px;\n    position: absolute;\n    left: 50%;\n    margin-left: 25px;\n    top: 315px;\n    z-index: 3;\n    background: #f2e2b5;\n    transform: rotate(-25deg);\n  }\n  .foot > .footRight::before {\n    content: \"\";\n    display: block;\n    border-radius: 50%;\n    width: 60px;\n    height: 50px;\n    background: #9e5526;\n    position: absolute;\n    margin-left: 15px;\n    margin-top: 30px;\n  }\n  .hand > .handLeft {\n    border: 2px solid black;\n    position: absolute;\n    left: 50%;\n    top: 197px;\n    margin-left: -200px;\n    border-radius: 180px / 200px;\n    width: 150px;\n    height: 60px;\n    transform: rotate(-30deg);\n    background: #2e524e;\n  }\n  .hand > .handRight {\n    border: 2px solid black;\n    position: absolute;\n    left: 50%;\n    top: 197px;\n    margin-left: 50px;\n    border-radius: 180px / 200px;\n    width: 150px;\n    height: 60px;\n    transform: rotate(30deg);\n    background: #2e524e;\n  }\n  .zzz {\n    position: absolute;\n    left: 43%;\n    top: 10%;\n    animation: big 2000ms infinite linear;\n  }\n  @keyframes big {\n    0% {\n      transform: translate(200px, 30px) scale(1);\n    }\n    100% {\n      transform: translate(300px, -30px) scale(2);\n    }\n  }\n  @keyframes bigBody {\n    0% {\n      transform: scale(1);\n    }\n    100% {\n      transform: scale(1.05);\n    }\n  }\n";
-var _default = string;
-exports.default = _default;
-},{}],"main.js":[function(require,module,exports) {
-"use strict";
-
-var _css = _interopRequireDefault(require("/css.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 var n = 1;
 var demo = document.querySelector("#demo");
 var demo2 = document.querySelector("#demo2");
-demo.innerText = _css.default.substr(0, n);
-demo2.innerHTML = _css.default.substr(0, n);
+demo.innerText = string.substr(0, n);
+demo2.innerHTML = string.substr(0, n);
 
 var run = function run() {
   n += 1;
 
-  if (n > _css.default.length) {
+  if (n > string.length) {
     window.clearInterval(st);
     return;
   }
 
-  demo.innerText = _css.default.substr(0, n);
-  demo2.innerHTML = _css.default.substr(0, n);
+  demo.innerText = string.substr(0, n);
+  demo2.innerHTML = string.substr(0, n);
   demo.scrollTop = demo.scrollHeight;
 };
 
@@ -189,7 +174,7 @@ document.querySelector("#btnFast").onclick = function () {
   time = 0;
   st = play();
 };
-},{"/css.js":"css.js"}],"C:/Users/binghao/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"C:/Users/binghao/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
